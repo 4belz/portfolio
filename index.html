@@ -23,43 +23,72 @@
 
     <!-- Contenido principal -->
     <main>
+        <!-- Sección de Inicio -->
         <section id="inicio">
             <div class="container">
                 <h1>Bienvenido a mi portafolio</h1>
                 <p>¡Aquí puedes conocer más sobre mis proyectos y habilidades!</p>
+                <img src="https://storage.rxresu.me/clv5l2enl051efnw32uqmz1hm/pictures/clv5l2enl051efnw32uqmz1hm.jpg" alt="Foto de Abel Diaz Lafuente" style="border-radius: 50%; width: 100px; height: 100px;">
+                <h2>Abel Diaz Lafuente</h2>
+                <p>Cibersecurity IT, DEVOP, Python</p>
             </div>
         </section>
 
+        <!-- Sección de Proyectos -->
         <section id="proyectos">
             <div class="container">
                 <h2>Mis Proyectos</h2>
-                <!-- Aquí puedes listar tus proyectos -->
                 <div class="proyecto">
-                    <h3>Proyecto 1</h3>
-                    <p>Descripción del proyecto 1.</p>
-                </div>
-                <div class="proyecto">
-                    <h3>Proyecto 2</h3>
-                    <p>Descripción del proyecto 2.</p>
+                    <h3>Craflab.Cloud</h3>
+                    <p>Pequeña aplicación web que diseño y voy mejorando para uso personal.</p>
+                    <a href="https://ciber.craftlab.cloud" target="_blank">Ver proyecto</a>
                 </div>
             </div>
         </section>
 
+        <!-- Sección de Sobre Mí -->
         <section id="sobre-mi">
             <div class="container">
                 <h2>Sobre Mí</h2>
-                <p>¡Hola! Soy [Tu Nombre], un apasionado desarrollador web...</p>
+                <p>Técnico Superior en Sistemas de Telecomunicaciones con enfoque junior en programación y más de 8 años de experiencia brindando soporte técnico en pymes y grandes empresas, desde el lado del proveedor de internet. Competente en Linux, JavaScript y Python, respaldado por cursos adicionales. Apasionado por la ciberseguridad y con experiencia en el desarrollo de aplicaciones web para uso personal. Con conocimientos en MikroTik y hardware de equipos informáticos y de redes. ¡Listo para aprender y aportar en entornos de desarrollo! Conéctame para explorar oportunidades colaborativas.</p>
             </div>
         </section>
 
+        <!-- Sección de Certificaciones -->
+        <section id="certificaciones">
+            <div class="container">
+                <h2>Certificaciones</h2>
+                <ul>
+                    <li>
+                        <h3>Python Essentials 1 - Cisco</h3>
+                        <p>Enero 2024</p>
+                        <a href="https://www.credly.com/badges/43dd52fd-87f5-421c-98df-8e3e92b7a174/public_url" target="_blank">Ver certificación</a>
+                    </li>
+                    <li>
+                        <h3>JavaScript Essentials 1 - Cisco</h3>
+                        <p>Junio 2024</p>
+                        <a href="https://www.credly.com/badges/06c13c70-c511-4fc2-a0b8-d647097f9e01/public_url" target="_blank">Ver certificación</a>
+                    </li>
+                    <li>
+                        <h3>Networking Basics - Cisco</h3>
+                        <p>Abril 2024</p>
+                        <a href="https://www.credly.com/badges/b581ba55-6243-485f-9d7c-1856c50a028d/public_url" target="_blank">Ver certificación</a>
+                    </li>
+                    <!-- Agregar las demás certificaciones de la misma manera -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
         <section id="contacto">
             <div class="container">
                 <h2>Contacto</h2>
                 <p>Puedes contactarme en:</p>
                 <ul>
-                    <li>Email: <a href="mailto:tuemail@example.com">tuemail@example.com</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/tuusuario" target="_blank">LinkedIn</a></li>
-                    <!-- Otros enlaces de redes sociales -->
+                    <li>Email: <a href="mailto:abeldiiaz@gmail.com">abeldiiaz@gmail.com</a></li>
+                    <li>Teléfono: +34 636522676</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/abel-diaz-7b80b3280/" target="_blank">LinkedIn</a></li>
+                    <li>GitHub: <a href="https://github.com/4belz" target="_blank">GitHub</a></li>
                 </ul>
             </div>
         </section>
@@ -67,7 +96,21 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Tu Nombre</p>
+        <p>&copy; 2024 Abel Diaz Lafuente</p>
     </footer>
+
+    <!-- Script para efectos dinámicos -->
+    <script>
+        // Ejemplo de JavaScript para agregar interactividad
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
