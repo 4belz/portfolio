@@ -1,144 +1,101 @@
 /* styles.css */
 
-/* Variables de colores */
 :root {
-    --primary-color: #003ab7;
-    --secondary-color: #0059d6;
-    --background-color: #f0f0f0;
-    --text-color: #333;
-    --link-color: #0073e6;
-    --hover-color: #005bb5;
-}
-
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'IBM Plex Sans', sans-serif;
+    --primary-color: #1abc9c;
+    --secondary-color: #16a085;
+    --background-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --hover-color: #1abc9c;
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: var(--primary-color);
+    color: white;
     padding: 1rem;
+    text-align: center;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    padding: 0;
 }
 
-header nav ul li {
+nav ul li {
+    display: inline;
     margin: 0 1rem;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: var(--hover-color);
-}
-
-main .container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
-h1, h2, h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
 }
 
 section {
-    margin-bottom: 3rem;
+    padding: 2rem;
+}
+
+.project {
+    background-color: #34495e;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin: 1rem 0;
     padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.proyecto, .skill, .certification, .education, .experience {
-    margin-bottom: 2rem;
+form {
+    background-color: #34495e;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 1rem;
 }
 
-.proyecto h3, .skill h3, .certification h3, .education h3, .experience h3 {
-    color: var(--secondary-color);
+label {
+    display: block;
     margin-bottom: 0.5rem;
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
+input, textarea {
     width: 100%;
-    bottom: 0;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: #2c3e50;
+    color: var(--text-color);
 }
 
-/* Efectos hover para proyectos */
-.proyecto:hover, .skill:hover, .certification:hover, .education:hover, .experience:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-/* Botones */
 button {
     background-color: var(--primary-color);
     color: white;
     border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: var(--hover-color);
 }
 
-/* Estilos para la imagen de perfil */
-.profile-pic {
-    display: block;
-    margin: 0 auto 2rem;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-/* Estilos para la sección de contacto */
-.contact-info ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.contact-info ul li {
-    margin-bottom: 0.5rem;
-}
-
-.contact-info ul li a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-info ul li a:hover {
-    color: var(--hover-color);
-}
+/* Estilos adicionales en styles.css */
 
 /* Cambiar el color del menú de navegación al desplazarse */
 header.scrolled {
