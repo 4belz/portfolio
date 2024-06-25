@@ -1,61 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Abel</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Curriculum Vitae - Abel Diaz Lafuente</title>
+    <style>
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #000000;
+            background-color: #ffffff;
+            margin: 18px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #003ab7;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #003ab7;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .content {
+            margin-left: 20px;
+        }
+
+        .summary p {
+            text-align: justify;
+        }
+
+        .item {
+            margin-bottom: 10px;
+        }
+
+        .item a {
+            color: #003ab7;
+            text-decoration: none;
+        }
+
+        .item a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Abel Lopez - Desarrollador Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+    <div class="section">
+        <div class="content">
+            <h1>Abel Diaz Lafuente</h1>
+            <p>Cibersecurity IT, DEVOP, Python.</p>
+            <p>Email: <a href="mailto:abeldiiaz@gmail.com">abeldiiaz@gmail.com</a></p>
+            <p>Phone: <a href="tel:+34636522676">+34 636522676</a></p>
+            <p>Location: Monforte de Lemos</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/abel-diaz-7b80b3280/" target="_blank">Perfil LinkedIn</a></p>
+            <p>GitHub: <a href="https://github.com/4belz" target="_blank">Perfil GitHub</a></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h2>Resumen</h2>
+            <div class="summary">
+                <p>Técnico Superior en Sistemas de Telecomunicaciones con enfoque junior en programación y más de 8 años de experiencia brindando soporte técnico en pymes y grandes empresas, desde el lado del proveedor de internet. Competente en Linux, JavaScript y Python, respaldado por cursos adicionales. Apasionado por la ciberseguridad y con experiencia en el desarrollo de aplicaciones web para uso personal. Con conocimientos en MikroTik y hardware de equipos informáticos y de redes. ¡Listo para aprender y aportar en entornos de desarrollo! Conéctame para explorar oportunidades colaborativas.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h2>Certificaciones</h2>
+            <ul class="certifications">
+                <li>
+                    <div class="item">
+                        <p><strong>Python Essentials 1</strong> - Cisco (Enero 2024)</p>
+                        <p>Issuer: Cisco</p>
+                        <p><a href="https://www.credly.com/badges/43dd52fd-87f5-421c-98df-8e3e92b7a174/public_url" target="_blank">Ver certificación</a></p>
+                    </div>
+                </li>
+                <!-- Aquí van las demás certificaciones, ajustando el formato si es necesario -->
             </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Soy un desarrollador web apasionado por crear experiencias de usuario únicas y efectivas.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>Proyecto 1</h3>
-            <p>Descripción del proyecto 1.</p>
         </div>
-        <div class="project">
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto 2.</p>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <h2>Formación</h2>
+            <ul class="education">
+                <li>
+                    <div class="item">
+                        <p><strong>Ciberseguridad en entornos de tecnologías de operación</strong> - IES Daviña Rey (Septiembre 2023 - Junio 2024)</p>
+                        <p>Institución: IES Daviña Rey</p>
+                        <p><a href="#">Detalles</a></p>
+                    </div>
+                </li>
+                <!-- Aquí van los demás elementos de formación, ajustando el formato si es necesario -->
+            </ul>
         </div>
-        <!-- Añade más proyectos según sea necesario -->
-    </section>
+    </div>
 
-    <section id="contact">
-        <h2>Contacto</h2>
-        <form>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+    <div class="section">
+        <div class="content">
+            <h2>Experiencia</h2>
+            <ul class="experience">
+                <li>
+                    <div class="item">
+                        <p><strong>Técnico de Redes</strong> - INELCOM (Junio 2015 - Presente)</p>
+                        <p>Empresa: INELCOM</p>
+                        <p>Ubicación: Sarria</p>
+                        <p><a href="#">Detalles</a></p>
+                    </div>
+                </li>
+                <!-- Aquí van los demás elementos de experiencia laboral, ajustando el formato si es necesario -->
+            </ul>
+        </div>
+    </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+    <div class="section">
+        <div class="content">
+            <h2>Proyectos</h2>
+            <ul class="projects">
+                <li>
+                    <div class="item">
+                        <p><strong>Craflab.Cloud</strong> - Web app (SelfHosted) (Julio 2023 - Presente)</p>
+                        <p>Descripción: Pequeña aplicación web que diseño y voy mejorando para uso personal.</p>
+                        <p><a href="https://ciber.craftlab.cloud" target="_blank">Ver proyecto</a></p>
+                    </div>
+                </li>
+                <!-- Aquí van los demás proyectos, ajustando el formato si es necesario -->
+            </ul>
+        </div>
+    </div>
 
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
+    <div class="section">
+        <div class="content">
+            <h2>Idiomas</h2>
+            <ul class="languages">
+                <li>
+                    <div class="item">
+                        <p><strong>Inglés B1</strong></p>
+                    </div>
+                </li>
+                <!-- Aquí van los demás idiomas, ajustando el formato si es necesario -->
+            </ul>
+        </div>
+    </div>
 
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+    <div class="section">
+        <div class="content">
+            <h2>Habilidades / Tecnologías</h2>
+            <ul class="skills">
+                <li>
+                    <div class="item">
+                        <p><strong>Pentesting</strong> (Kali, Parrot, Hidra, Burp Suite, John the Ripper, sqlmap, Nessus)</p>
+                    </div>
+                </li>
+                <!-- Aquí van las demás habilidades / tecnologías, ajustando el formato si es necesario -->
+            </ul>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Abel Lopez. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
 </body>
+
 </html>
