@@ -1,7 +1,172 @@
+/* styles.css */
 
-
-body {
-    background-color: #160b0b;
-    color: #fff;
+/* Variables de colores */
+:root {
+    --primary-color: #003ab7;
+    --secondary-color: #0059d6;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --link-color: #0073e6;
+    --hover-color: #005bb5;
 }
 
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+main .container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto, .skill, .certification, .education, .experience {
+    margin-bottom: 2rem;
+}
+
+.proyecto h3, .skill h3, .certification h3, .education h3, .experience h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Efectos hover para proyectos */
+.proyecto:hover, .skill:hover, .certification:hover, .education:hover, .experience:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Botones */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+/* Estilos para la imagen de perfil */
+.profile-pic {
+    display: block;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Estilos para la sección de contacto */
+.contact-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* Cambiar el color del menú de navegación al desplazarse */
+header.scrolled {
+    background-color: var(--secondary-color);
+    transition: background-color 0.3s ease;
+}
+
+/* Botón "volver arriba" */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--hover-color);
+}
